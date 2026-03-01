@@ -42,7 +42,7 @@ If you want the "Email" export button to work, you will need your own free [Emai
    > **Note:** Be sure to put \`{{{message}}}\` (with exactly 3 curly braces!) in your EmailJS template box so the HTML Excel Tables render beautifully!
    Note your **Template ID**.
 4. In the Account tab, find your **Public Key**.
-5. Right-click the Movie Tracker icon in Chrome and click **Options** (Ayarlar).
+5. Right-click the Movie Tracker icon in Chrome and click **Options**.
 6. Fill in your default recipient email and your three EmailJS IDs and hit Save.
 
 ## 🛠️ Built With
@@ -53,3 +53,4 @@ If you want the "Email" export button to work, you will need your own free [Emai
 
 ## 📝 License
 This project is open-source and available under the [MIT License](LICENSE).
+
