@@ -45,6 +45,16 @@ If you want the "Email" export button to work, you will need your own free [Emai
 5. Right-click the Movie Tracker icon in Chrome and click **Options**.
 6. Fill in your default recipient email and your three EmailJS IDs and hit Save.
 
+## 🔑 OMDB API Setup (Required)
+Since this extension fetches live data from OMDB, you need to provide your own free API Key for it to work.
+
+1. Go to [OMDB API website](https://www.omdbapi.com/apikey.aspx) and sign up for a FREE API Key.
+2. Open the downloaded extension folder.
+3. Open [background.js] in any text editor (like Notepad or VS Code).
+4. On **Line 1**, replace the empty string with your new API key:
+   `const OMDB_API_KEY = 'YOUR_API_KEY_HERE';`
+5. Save the file and load the extension into Chrome.
+
 ## 🛠️ Built With
 * HTML / CSS / Vanilla JavaScript
 * Manifest V3 Chrome Extension architecture
@@ -53,4 +63,5 @@ If you want the "Email" export button to work, you will need your own free [Emai
 
 ## 📝 License
 This project is open-source and available under the [MIT License](LICENSE).
+
 
