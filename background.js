@@ -1,4 +1,4 @@
-const OMDB_API_KEY = '3221520a';
+const OMDB_API_KEY = '';
 
 // Create right-click context menu when extension is installed
 chrome.runtime.onInstalled.addListener(() => {
@@ -129,3 +129,4 @@ function saveMovieDirectly(movieInfo, sendResponseCallback) {
     }
   });
 }
+
