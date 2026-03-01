@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Tracker - Settings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="options.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="icons/icon48.png" alt="Movie Tracker Logo" width="48" height="48">
+            <div>
+                <h1>Movie Tracker Settings</h1>
+                <p>Customize how your extension works.</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2>Export Settings</h2>
+                <div class="form-group">
+                    <label for="export-email">Default Recipient Email</label>
+                    <p class="description">When you click "Email" in the watchlist, the email will be sent to this
+                        address.</p>
+                    <input type="email" id="export-email" placeholder="e.g. your.friend@gmail.com">
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>EmailJS Configuration (Optional)</h2>
+                <div class="form-group">
+                    <label for="emailjs-public-key">Public Key</label>
+                    <input type="text" id="emailjs-public-key" placeholder="e.g. aBcDeFgHiJkLmNoPq">
+                </div>
+                <div class="form-group" style="margin-top: 12px;">
+                    <label for="emailjs-service-id">Service ID</label>
+                    <input type="text" id="emailjs-service-id" placeholder="e.g. service_abc123">
+                </div>
+                <div class="form-group" style="margin-top: 12px;">
+                    <label for="emailjs-template-id">Template ID</label>
+                    <input type="text" id="emailjs-template-id" placeholder="e.g. template_xyz789">
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <button id="save-btn" class="btn primary">Save Settings</button>
+            <span id="save-status" class="status hidden">Saved successfully!</span>
+        </footer>
+    </div>
+    <script src="options.js"></script>
+</body>
+
+</html>
